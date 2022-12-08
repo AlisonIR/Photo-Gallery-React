@@ -28,7 +28,7 @@ const App = () => {
 
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1>) : (
-        <div className="grid grid-cols-3 gap-4">
+        <div className= "grid grid-cols-1 w-50 ml-3  sm:grid-cols-1 ml-[130px] md:grid-cols-2 md:ml-[20px] mr-[20px] lg:grid-cols-3 lg:ml-6 xl:grid-cols-3 gap-4 ">
           {images.map((image, index) => {
             return <ImagesCard key={index} image={image} />;
           })}
